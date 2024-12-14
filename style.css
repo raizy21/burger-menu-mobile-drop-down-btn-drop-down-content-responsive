@@ -1,0 +1,81 @@
+/* Reset Line */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+nav a {
+  text-decoration: none;
+  color: green;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0000ee;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+  background-color: #db924b;
+  color: #110802;
+  text-align: center;
+  padding: 20px 0;
+}
+ul {
+  padding: 0;
+  list-style-type: none; /* Removes bullet points */
+  width: 100%;
+}
+
+li {
+  /* background-color: #10576d; */
+  color: #cfdce1;
+  padding: 10px;
+  border-radius: 5px; /* Rounded corners for the list items */
+  display: inline-block;
+  margin: 0 6rem;
+  padding: 0 3rem;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1060px) {
+  /* CSS rules for medium screens */
+  h1 {
+    color: red;
+  }
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  i {
+    font-size: 2rem;
+    margin: 3rem;
+    /* background-color: blue; */
+  }
+
+  .drop-down-content {
+    display: none;
+    position: absolute;
+    padding: 3rem;
+    margin: 3rem;
+  }
+
+  .mobile:hover .drop-down-content,
+  li {
+    display: block;
+  }
+}
